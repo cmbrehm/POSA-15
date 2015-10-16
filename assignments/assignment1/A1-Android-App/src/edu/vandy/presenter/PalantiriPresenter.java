@@ -158,7 +158,7 @@ public class PalantiriPresenter
     /**
      * Hook method called to shutdown the Model layer.
      *
-     * @param isChangeConfigurations
+     * @param isChangingConfigurations
      *        True if a runtime configuration triggered the onDestroy() call.
      */
     @Override
@@ -234,7 +234,7 @@ public class PalantiriPresenter
      **/
     @Override
     public void start() {
-        // Initialize the Palantiri.
+        // Initialize the PalantiriManager.
         getModel().makePalantiri(Options.instance().numberOfPalantiri());
 
         // Initialize the count of the number of threads Beings use to
@@ -266,7 +266,7 @@ public class PalantiriPresenter
     private void beginBeingsThreads(int beingCount) {
         // Create an empty ArrayList, create new BeingThreads that
         // perform the BeingRunnable logic, add them to the ArrayList,
-        // and then start all the Threads in the ArrayList.
+        // and then start all the BeingThreads in the ArrayList.
         // TODO - You fill in here.
     }
 

@@ -55,7 +55,7 @@ public class PalantiriModel
 
     /**
      * Create a PalantiriManager that contains the designated number
-     * of Palantir with random gaze times between 1 and 5 milliseconds
+     * of Palantir with random gaze times between 1 and 5 seconds
      *
      * @param palantiriCount
      *            The number of Palantiri to add to the PalantiriManager.
@@ -64,7 +64,7 @@ public class PalantiriModel
     public void makePalantiri(int palantiriCount) {
     	// Create a list to hold the generated Palantiri.
         final List<Palantir> palantiri =
-            new ArrayList<Palantir>();		
+            new ArrayList<Palantir>(palantiriCount);
 
         // Create a new Random number generator.
         final Random random = new Random();
